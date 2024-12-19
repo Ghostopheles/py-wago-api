@@ -1,0 +1,33 @@
+[project]
+name = "py-wago-api"
+version = "0.0.1"
+description = "An API wrapper for wago.tools"
+authors = [
+    { name="Ghostopheles", email="ghost@ghst.tools"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+
+    "Intended Audience :: Developers",
+
+    "License :: Public Domain",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">= 3.11"
+dependencies = ["httpx[http2]"]
+
+[project.urls]
+Homepage = "https://github.com/Ghostopheles/py-wago-api"
+Repository = "https://github.com/Ghostopheles/py-wago-api.git"
+Issues = "https://github.com/Ghostopheles/py-wago-api/issues"
+
+[build-system]
+requires = ["setuptools", "wheel", "cibuildwheel"]
+build-backend = "setuptools.build_meta"
